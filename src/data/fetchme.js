@@ -15,13 +15,13 @@ useEffect(() => {
 return(
     <>
      <div className="container">
-     <h2 className="text-center">We Sell</h2>
+     <h2 className="text-center heads">We Sell</h2>
                 <div className="row">                      
                 {
                     users.map((curElem) => {
                             return(
                                 <>          
-                                    <div className="col-12 col-sm-8 col-md-6 col-lg-4">
+                                    <div className="col-12 col-sm-8 col-md-4 col-lg-3">
                                     <div className="card" id="productid-{curElem.id}">
                                         <img className="card-img" src={curElem.image} alt="{curElem.title}"></img>
                                         <div className="card-img-overlay d-flex justify-content-end">
@@ -35,7 +35,7 @@ return(
                                         <p className="card-text">
                                             The Vans All-Weather MTE Collection features footwear and apparel designed to withstand the elements whilst still looking cool. </p>                                       
                                         <div className="buy d-flex justify-content-between align-items-center">
-                                            <div className="price text-success"><h5 className="mt-4">{curElem.price}</h5></div>
+                                            <div className="price text-success"><h5 className="mt-4">Rs. {curElem.price}</h5></div>
                                             <a href="#" className="btn btn-danger mt-3"><i className="fas fa-shopping-cart"></i> Add to Cart</a>
                                         </div>
                                         </div>

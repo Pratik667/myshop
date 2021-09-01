@@ -13,7 +13,18 @@
 .card-product{
   margin: 0.5rem;
 }
+img.card-img {
+  height: 12rem;
+  width: 100%;
+  /* margin: 0 auto; */
+  padding: 1rem;
+}
 
+.card{
+  padding: 0.3rem;
+  background-image: url(../src/assets/floralbg.jpg);
+}
+.card-img,.card-body{background-color:#fff;}
 /* Navbar */
 .btn .bx {
   vertical-align: inherit;
