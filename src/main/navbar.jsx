@@ -29,7 +29,7 @@ const Navbar = () =>{
             </button>
 
     <a className="navbar-brand" href="#">
-      <h4 className="font-weight-bold">Logo</h4>
+      <h4 className="font-weight-bold"><img src="./assets/logo.jpg" /></h4>
     </a>
 
     <ul className="navbar-nav ml-auto d-block d-md-none">
