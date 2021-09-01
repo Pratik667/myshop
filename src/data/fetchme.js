@@ -20,27 +20,33 @@ return(
                 {
                     users.map((curElem) => {
                             return(
-                                <div className="col-md-4">
-                                    <div className="card card-product">
-                                        <div className="product-img-parent"><img src={curElem.image} className="card-img-top product-image" alt={curElem.title}></img></div>
-                                        
-                                        {/* <div>{curElem.id}</div>
-                                        <img src={curElem.image} height="75px"/>
-                                        <div>{curElem.title}</div>
-                                        <div>{curElem.category}</div>
-                                        <div>{curElem.description}</div>
-                                        <div>{curElem.price}</div>
-                                        <div>{curElem.rating.rate}</div>
-                                        <div>{curElem.rating.count}</div> */}
+                                <>          
+                                    <div className="col-12 col-sm-8 col-md-6 col-lg-4">
+                                    <div className="card" id="productid-{curElem.id}">
+                                        <img className="card-img" src={curElem.image} alt="{curElem.title}"></img>
+                                        <div className="card-img-overlay d-flex justify-content-end">
+                                        <a href="#" className="card-link text-danger like">
+                                            <i className="fas fa-heart"></i>
+                                        </a>
+                                        </div>
                                         <div className="card-body">
-                                            <h5 className="card-title text-center">{curElem.title}</h5>
-                                            <p className="card-text">{curElem.description}</p>
+                                        <h4 className="card-title">{curElem.title}</h4>
+                                        <h6 className="card-subtitle mb-2 text-muted">Category: {curElem.category}</h6>
+                                        <p className="card-text">
+                                            The Vans All-Weather MTE Collection features footwear and apparel designed to withstand the elements whilst still looking cool. </p>                                       
+                                        <div className="buy d-flex justify-content-between align-items-center">
+                                            <div className="price text-success"><h5 className="mt-4">{curElem.price}</h5></div>
+                                            <a href="#" className="btn btn-danger mt-3"><i className="fas fa-shopping-cart"></i> Add to Cart</a>
+                                        </div>
                                         </div>
                                     </div>
-                                </div>
+                                    </div>
+                                </>
                             )
                     })
                 }
+                 
+                            
        </div>
         </div>
     </>

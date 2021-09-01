@@ -26,10 +26,10 @@ const Navbar = () =>{
 
     <button type="button" id="sidebarCollapse" className="btn btn-link d-block d-md-none">
                 <i className="bx bx-menu icon-single"></i>
-            </button>
+    </button>
 
     <a className="navbar-brand" href="#">
-      <h4 className="font-weight-bold"><img src="./assets/logo.jpg" /></h4>
+      <h4 className="font-weight-bold"><img src="https://raw.githubusercontent.com/Pratik667/myshop/development/src/assets/logo.jpg" height="50px" width="80px"/></h4>
     </a>
 
     <ul className="navbar-nav ml-auto d-block d-md-none">
@@ -38,7 +38,7 @@ const Navbar = () =>{
       </li>
     </ul>
 
-    <div className="collapse navbar-collapse">
+    <div className="collapse navbar-collapse nav-left">
          <ul className="navbar-nav">
         <li className="nav-item">
           <a className="btn btn-link" href="#"><i className="bx bxs-cart icon-single"></i> <span className="badge badge-danger">3</span></a>
