@@ -1,12 +1,14 @@
 import React from 'react';
 import Navbar from './navbar';
 import Fetch from '../data/fetchme';
+import Category from '../data/category';
 
 function Home(){
     return[
         <>
             <Navbar />
-           <Fetch />
+            <div class="banner"></div>
+            <Category />
         </>
     ]
 }
