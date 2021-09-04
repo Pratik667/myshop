@@ -347,3 +347,115 @@ ul.social-icons li {
   letter-spacing: 1.5;
   text-align:center;
 }
+.category-card .card-img-top{height:351px;}
+@media only screen and (max-width: 1024px) {
+  .category-card .card-img-top{height:300px;}
+}
+@media only screen and (max-width: 600px) {
+  .category-card .card-img-top{height:200px;}
+}
+@media only screen and (max-width: 360px) {
+  .category-card .card-img-top{height:300px;}
+}
+.category-card .card-title{
+  height:auto;
+  text-transform: uppercase;
+}
+.category-card a{
+  text-decoration: none;
+}
+.single-banner{
+  background-color:red;
+ padding:0.5rem;
+ background: url(https://images.unsplash.com/photo-1553532434-5ab5b6b84993?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29sb3IlMjBwYXR0ZXJufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80) center;
+}
+.single-banner .card{
+   margin:0 auto;
+   border-radius: 0;
+}
+.single-banner .card-text{
+  font-size: x-large;
+  text-transform: capitalize;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+.single-banner .card-body{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.shop-btn{
+  border:0;
+  background-color:#fa8231;
+  color:rgba(0, 0, 0, 0.7);
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 0;
+  width:170px;
+}
+.shop-btn:hover{
+  color:#fa8231;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* footer css */
+.footer{
+  background:#fff;
+  padding:30px 0px;
+  font-family: 'Play', sans-serif;
+  text-align:center;
+  }
+  
+  .footer .row{
+  margin:1% 0%;
+  padding:0.6% 0%;
+  color:#000;
+  font-size:0.8em;
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .footer .row a{
+  text-decoration:none;
+  color:#000;
+  transition:0.5s;
+  width:auto;
+
+  }
+  
+  .footer .row a:hover{
+  color:#010;
+  }
+  
+  .footer .row ul{
+  width:100%;
+  }
+  
+  .footer .row ul li{
+  display:inline-block;
+  margin:0px 30px;
+  }
+  
+  .footer .row a i{
+  font-size:2em;
+  margin:0% 1%;
+  }
+  
+  @media (max-width:720px){
+  .footer{
+  text-align:left;
+  padding:5%;
+  }
+  .footer .row ul li{
+  display:block;
+  margin:10px 0px;
+  text-align:left;
+  }
+  .footer .row a i{
+  margin:0% 3%;
+  }
+  }
