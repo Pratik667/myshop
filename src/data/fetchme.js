@@ -15,7 +15,7 @@ useEffect(() => {
 return(
     <>
      <div className="container">
-     <h2 className="text-center heads">We Sell</h2>
+     <h2 className="text-center heads pt-5 signature-header">Collections</h2>
                 <div className="row">                      
                 {
                     users.map((curElem) => {

@@ -3,7 +3,7 @@
   padding:0;
 }
 body{
-  background: rgba(249,175,175,0.42);
+  background-color: linear-gradient(to bottom right, pink, #fff);
   font-family: Calibri, 'Trebuchet MS', sans-serif;
 }
 .product-image{
