@@ -1,17 +1,6 @@
 import React,{useEffect,useState} from 'react';
 
 const Category = () =>{
-
- const [category, setCat] = useState([]);
-const getCat = async() => {
-    const responses = await fetch('https://fakestoreapi.com/products/categories');
-     setCat(await responses.json());
-  
-}
-useEffect(() => {
-    getCat();
-});
-
 return(
     <>
      <div className="container mt-5">
