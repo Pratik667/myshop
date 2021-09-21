@@ -12,6 +12,10 @@ import Jwellery from './data/jwellery';
 import HomeBanner from './data/homebanner';
 import Support from './main/support';
 import Contact from './main/contact';
+import Services from './main/services';
+import Privacy from './main/privacy';
+import Terms from './main/terms';
+import Career from './main/Career';
 const Fetch = lazy(() => import('./data/fetchme'));
 
 ReactDOM.render(
@@ -97,18 +101,15 @@ ReactDOM.render(
           </div>
 
           <ul className="list-unstyled components links">
-            <li className="active">
-              <a href="#"><i className="bx bx-home mr-3"></i> Home</a>
+            <li className="active">            
+              <Link to="/"><i className="bx bx-home mr-3"></i> Home</Link>
             </li>
             <li>
-              <a href="#"><i className="bx bx-carousel mr-3"></i> Products</a>
+              <Link to="/collections"><i className="bx bx-carousel mr-3"></i> Collections</Link>
             </li>
             <li>
               <a href="#"><i className="bx bx-book-open mr-3"></i> Schools</a>
-            </li>
-            <li>
-              <a href="#"><i className="bx bx-crown mr-3"></i> Publishers</a>
-            </li>
+            </li>            
             <li>
               <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" className="dropdown-toggle"><i className="bx bx-help-circle mr-3"></i>
                 Support</a>
@@ -125,29 +126,7 @@ ReactDOM.render(
               </ul>
             </li>
             <li>
-              <a href="#"><i className="bx bx-phone mr-3"></i> Contact</a>
-            </li>
-          </ul>
-
-          <h6 className="text-uppercase mb-1">Categories</h6>
-          <ul className="list-unstyled components mb-3">
-            <li>
-              <a href="#">Category 1</a>
-            </li>
-            <li>
-              <a href="#">Category 1</a>
-            </li>
-            <li>
-              <a href="#">Category 1</a>
-            </li>
-            <li>
-              <a href="#">Category 1</a>
-            </li>
-            <li>
-              <a href="#">Category 1</a>
-            </li>
-            <li>
-              <a href="#">Category 1</a>
+              <Link to="/contact"><i className="bx bx-phone mr-3"></i> Contact</Link>
             </li>
           </ul>
 
@@ -165,7 +144,13 @@ ReactDOM.render(
           <Suspense fallback={<div className="load">Please wait</div>} >
             <Fetch />
             </Suspense>
-        </Route>        
+        </Route>  
+        <Route path="/contact">        
+            <Contact />
+        </Route> 
+        <Route path="/support">
+          <Support />
+        </Route>       
         <Route path="/">
             <Suspense fallback={<div className="load">Please wait</div>} >
             <div class="banner"></div>
@@ -175,12 +160,7 @@ ReactDOM.render(
             <Jwellery />    
             </Suspense>
         </Route>
-        <Route path="/contact">        
-            <Contact />
-        </Route> 
-        <Route path="/support">
-          <Support />
-        </Route> 
+        
       </Switch>
       <footer>
             <div class="footer">

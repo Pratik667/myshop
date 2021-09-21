@@ -57,4 +57,4 @@ return(
 )
 }
 
-export default Category
+export default Category;
